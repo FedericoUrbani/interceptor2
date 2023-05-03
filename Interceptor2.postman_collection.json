@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "d6867a58-a42c-4137-a4f4-6f7a4e06f3b3",
+		"name": "Interceptor2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23018916"
+	},
+	"item": [
+		{
+			"name": "GetHeaderAbsent",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/months",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"months"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetHeaderEmpty",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "monthNumber",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/months",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"months"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetHeaderPresentValue",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "monthNumber",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/months",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"months"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetHeaderPresentValueWrong",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "monthNumber",
+						"value": "92347293",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/months",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"months"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
